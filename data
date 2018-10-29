@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<cred_his &le; 0.5<br/>gini = 0.429<br/>samples = 491<br/>value = [338, 153]<br/>class = acc>, fillcolor="#e581398c"] ;
+1 [label=<lamt &le; 73.0<br/>gini = 0.446<br/>samples = 116<br/>value = [39, 77]<br/>class = rej>, fillcolor="#399de57e"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<gini = 0.198<br/>samples = 9<br/>value = [1, 8]<br/>class = rej>, fillcolor="#399de5df"] ;
+1 -> 2 ;
+3 [label=<lamt &le; 99.5<br/>gini = 0.458<br/>samples = 107<br/>value = [38, 69]<br/>class = rej>, fillcolor="#399de573"] ;
+1 -> 3 ;
+4 [label=<gini = 0.444<br/>samples = 15<br/>value = [10, 5]<br/>class = acc>, fillcolor="#e581397f"] ;
+3 -> 4 ;
+5 [label=<gini = 0.423<br/>samples = 92<br/>value = [28, 64]<br/>class = rej>, fillcolor="#399de58f"] ;
+3 -> 5 ;
+6 [label=<prop_area &le; 1.5<br/>gini = 0.323<br/>samples = 375<br/>value = [299, 76]<br/>class = acc>, fillcolor="#e58139be"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label=<appinc &le; 1612.5<br/>gini = 0.385<br/>samples = 231<br/>value = [171, 60]<br/>class = acc>, fillcolor="#e58139a6"] ;
+6 -> 7 ;
+8 [label=<gini = 0.49<br/>samples = 7<br/>value = [3, 4]<br/>class = rej>, fillcolor="#399de540"] ;
+7 -> 8 ;
+9 [label=<gini = 0.375<br/>samples = 224<br/>value = [168, 56]<br/>class = acc>, fillcolor="#e58139aa"] ;
+7 -> 9 ;
+10 [label=<married &le; 0.5<br/>gini = 0.198<br/>samples = 144<br/>value = [128, 16]<br/>class = acc>, fillcolor="#e58139df"] ;
+6 -> 10 ;
+11 [label=<gini = 0.33<br/>samples = 48<br/>value = [38, 10]<br/>class = acc>, fillcolor="#e58139bc"] ;
+10 -> 11 ;
+12 [label=<gini = 0.117<br/>samples = 96<br/>value = [90, 6]<br/>class = acc>, fillcolor="#e58139ee"] ;
+10 -> 12 ;
+}
